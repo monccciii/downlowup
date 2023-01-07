@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import saturatedbg from '../public/saturatedbg.png'
 import { useEffect, useState } from 'react'
-import Bring2top from './bring2top'
+import Bring2top from './bring2top.tsx'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { useRouter } from 'next/router'
