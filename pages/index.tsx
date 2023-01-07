@@ -2,6 +2,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Landing from '../components/landing'
+import Bring2top from '../components/bring2top'
 import Navbar from '../components/navbar'
 import { initFirebase } from '../firebase/firebaseApp'
 export default function Home() {
