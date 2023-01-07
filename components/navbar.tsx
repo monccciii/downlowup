@@ -17,7 +17,7 @@ const params = router.pathname
 
 
   return (
-      <div id='top' className='flex justify-between p-5'>
+      <div id='top' className='w-full flex justify-between p-5'>
         <Image src="/DownLowUPweb.png" alt='DownLowUp' width={100} height={100}
         onClick={() => {
           if (!params) {
@@ -26,7 +26,7 @@ const params = router.pathname
             router.push('/')
             checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
           }}}></Image>
-        <ul style={{fontFamily:"'Poppins', sans-serif", fontWeight:'400'}} className='text-black gap-5 sm:gap-10 flex'>
+        <ul style={{fontFamily:"'Poppins', sans-serif", fontWeight:'400'}} className='text-black gap-w sm:gap-10 flex'>
             <li onClick={() => {
               if (!params) {
               checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
