@@ -250,8 +250,7 @@ export default function Properties() {
               <div className='bg-blue-500 rounded-full text-center p-2 text-white' onClick={() =>  fileRef2.current.click()}>Click to Insert Image</div>
               <div className='bg-green-500 rounded-full text-center p-2 mt-[5vh] text-white' onClick={() => {
                 EditProperty(propertyInfo[0])
-                resetAllvals();
-
+                window.location.reload();
               }} >Submit Edits</div>
               </div>}
         </div>

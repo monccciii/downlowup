@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import saturatedbg from '../public/saturatedbg.png'
 import { useEffect, useState } from 'react'
-import Bring2top from './bring2top'
+import Bring2top from './bring2top.tsx'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import { useRouter } from 'next/router'
@@ -57,12 +57,13 @@ export default function Landing() {
 
   return (
     <div className='scrollbar-hide'>
-      <div className='w-[100vw] overflow-y-hidden ' style={{fontFamily:"'Poppins', sans-serif", fontWeight:'200'}}>
+      <div className='w-full overflow-x-hidden ' style={{fontFamily:"'Poppins', sans-serif", fontWeight:'200'}}>
       
 
         <div id='main' className='grid grid-cols-1 lg:grid-cols-3'>
-        <p className='text-5xl text-center md:text-7xl lg:text-9xl p-20 drop-shadow-lg'>Welcome&nbsp;to <br /> <span style={{fontWeight:'300'}}><span className='border-b-2 border-blue-500'>Down</span><span className='border-b-2 border-yellow-500'>Low</span><span className='border-b-2 border-red-500'>UP</span>.</span></p>
+        <p className='text-5xl text-center md:text-7xl lg:text-9xl py-10 sm:px-10 drop-shadow-lg'>Welcome&nbsp;to <br /> <span style={{fontWeight:'300'}}><span className='border-b-2 border-blue-500'>Down</span><span className='border-b-2 border-yellow-500'>Low</span><span className='border-b-2 border-red-500'>UP</span>.</span></p>
         <div>
+          
         </div>
         <div className='p-20'>
         <Image src="/prelayered.png" width={1000} height={720} alt=''></Image>
@@ -158,11 +159,11 @@ No more of the hassle of making phone calls all day, <span style={{fontWeight:'4
             <ul style={{fontWeight:'600'}} className='mt-[25vh] text-black z-10 list-none justify-evenly flex'>
                 {properties === undefined ? '' : properties.map((property, index) => {
                   return (
-                    <li key={index} className='sm:p-5 md:p-10 rounded transition ease-in-out delay-150 hover:-translate-y-1 z-50 hover:scale-110 hover:bg-slate-200 duration-300'>
+                    <li key={index} className='sm:p-5 text-transparent md:p-10 shadow-2xl rounded transition ease-in-out delay-150 hover:text-black translate-y-1 z-50 hover:scale-110 hover:hover:bg-slate-200 duration-300'>
                     <p className='font-extralight'>
                       <Image src={property.image} alt='' width={200} height={100}></Image>
                       <p className='text-center'>{property.address}</p>
-                      <p className='text-center'>{property.price}</p>
+                      <p className='text-center'>${property.price}</p>
                     </p>
                     </li>
                   )

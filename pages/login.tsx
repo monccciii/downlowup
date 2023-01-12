@@ -48,6 +48,7 @@ export default function Login() {
                   />
                 <p style={{fontWeight:'200'}} className=' text-xl text-black'>Password</p>
                 <input
+                type='password'
                     className="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     onChange={(e:any) => {setPassword(e.target.value)}}
 

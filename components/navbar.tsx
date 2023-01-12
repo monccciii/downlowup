@@ -17,7 +17,7 @@ const params = router.pathname
 
 
   return (
-      <div id='top' className='flex justify-between p-5'>
+        <div className='p-5 w-full sm:flex sm:text-base sm:justify-between items-center bg-white'> 
         <Image src="/DownLowUPweb.png" alt='DownLowUp' width={100} height={100}
         onClick={() => {
           if (!params) {
@@ -26,8 +26,8 @@ const params = router.pathname
             router.push('/')
             checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
           }}}></Image>
-        <ul style={{fontFamily:"'Poppins', sans-serif", fontWeight:'400'}} className='text-black gap-5 sm:gap-10 flex'>
-            <li onClick={() => {
+                <ul style={{fontFamily:"'Poppins', sans-serif", fontWeight:'400'}} className='text-black gap-1 sm:gap-10 flex'>
+                <li onClick={() => {
               if (!params) {
               checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
               } else {
@@ -38,7 +38,9 @@ const params = router.pathname
             <li onClick={() => {checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})}}>Services</li>
             <li onClick={() => {checkfordoc()[2]?.scrollIntoView({behavior:'smooth'})}}>About</li>
             <li onClick={() => {checkfordoc()[3]?.scrollIntoView({behavior:'smooth'})}}>Contact</li>
-        </ul>
-      </div>
+            <li onClick={() => router.push('/allproperties')}>Properties</li>
+
+            </ul>
+        </div> 
   )
 }
