@@ -41,7 +41,9 @@ export default function Allproperties() {
     </Head>
     <Navbar />
     <div style={{fontFamily:"'Poppins', sans-serif"}}>
-        <h1 className='text-center text-5xl mb-5 font-extralight tracking-widest mb-[10vh]'>ALL PROPERTIES</h1>
+        <h1 className='text-center text-5xl mb-2 font-extralight tracking-widest'>ALL PROPERTIES</h1>
+        <h1 className='text-center text-2xl mb-5 font-extralight tracking-widest mb-[10vh]'>DownLowUP helps people find rental properties quick and simple. No more of the hassle of making phone calls all day, DownLowUP takes care of all of it.</h1>
+
         <div className='flex'>
             <div className='mx-auto'>
         
