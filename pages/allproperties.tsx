@@ -46,7 +46,7 @@ export default function Allproperties() {
         <h1 className='text-center mx-auto w-[60vw] text-2xl mb-10 font-extralight'>DownLowUP helps people find rental properties quick and simple. No more of the hassle of making phone calls all day, DownLowUP takes care of all of it.</h1>
         </div>
         <h1 className='text-center mx-auto w-[60vw] text-2xl mb-5 font-extralight mb-[10vh]'>Interested? <span className='text-indigo-500 font-light underline' onClick={() => router.push('/#contact')}>Contact us!</span></h1>
-
+      
 
         <div className='flex'>
             <div className='mx-auto'>

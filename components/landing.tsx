@@ -233,7 +233,7 @@ export default function Landing() {
                     name="message"
                   ></textarea>
                   <div className='flex'>
-                  <button className='bg-black text-white mx-auto rounded-lg pl-5 pr-5 pt-2 pb-2 hover:-translate-y+3 hover:scale-110 hover:bg-[#454545] duration-300 overflow-hidden' type="submit" value='Send'></button>
+                  <input className='bg-black text-white mx-auto rounded-lg pl-5 pr-5 pt-2 pb-2 hover:-translate-y+3 hover:scale-110 hover:bg-[#454545] duration-300 overflow-hidden cursor-pointer' type="submit" value='Send'></input>
                   </div>
                   </form>
     
