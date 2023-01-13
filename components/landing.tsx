@@ -145,37 +145,6 @@ export default function Landing() {
 
 
 
-        <div className='mt-[15vh] w-[100vw] h-[150vh] pb-20 bg-black'>
-            <div className='h-[2vh]'></div>
-            <div className=''>
-            <motion.div
-  initial={{ opacity: 0, marginTop:0}}
-  whileInView={{ opacity: 1, marginTop:'10vh', textShadow:'-2px 1px white'}}
-  transition={{ duration: 3, type: "tween" }}>
-            <p id='services' className='text-6xl md:text-7xl text-center text-white'>S E R V I C E S</p>
-            </motion.div>
-            
-            <p className='mt-[30vh] text-xl text-center text-white sm:w-[40vw] w-[70vw] mx-auto'><span style={{fontWeight:'400'}}>DownLowUP</span> helps people find rental properties quick and simple.  
-No more of the hassle of making phone calls all day, <span style={{fontWeight:'400'}}>DownLowUP</span> takes care of all of it. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <ul style={{fontWeight:'600'}} className='mt-[25vh] text-black z-10 list-none justify-evenly flex'>
-                {properties === undefined ? '' : properties.map((property, index) => {
-                  return (
-                    <li key={index} className='sm:p-5 text-transparent md:p-10 shadow-2xl rounded transition ease-in-out delay-150 hover:text-black translate-y-1 z-50 hover:scale-110 hover:hover:bg-slate-200 duration-300'>
-                    <p className='font-extralight'>
-                      <Image src={property.image} alt='' width={200} height={100}></Image>
-                      <p className='text-center'>{property.address}</p>
-                      <p className='text-center'>${property.price}</p>
-                    </p>
-                    </li>
-                  )
-                })}
-                
-            </ul>
-            </div>
-
-        </div>
-
-
 
         <div className='w-[100vw] bg-white'>
         <motion.div
@@ -264,7 +233,7 @@ No more of the hassle of making phone calls all day, <span style={{fontWeight:'4
                     name="message"
                   ></textarea>
                   <div className='flex'>
-                  <input className='bg-black text-white mx-auto rounded-lg pl-5 pr-5 pt-2 pb-2 hover:-translate-y+3 hover:scale-110 hover:bg-[#454545] duration-300 overflow-hidden' type="submit" value='Send'></input>
+                  <button className='bg-black text-white mx-auto rounded-lg pl-5 pr-5 pt-2 pb-2 hover:-translate-y+3 hover:scale-110 hover:bg-[#454545] duration-300 overflow-hidden' type="submit" value='Send'></button>
                   </div>
                   </form>
     
@@ -277,9 +246,7 @@ No more of the hassle of making phone calls all day, <span style={{fontWeight:'4
         </div>
         <div className='bg-white h-[10vh] w-[100vw] shadow-2xl'>
             <p className='mt-[3vh] text-center'>DownLowUP</p>
-            <p className='text-center'>888-728-6795</p>
-            <p className='text-center underline decoration-indigo-500' onClick={() => router.push('/panel')}>Panel</p>
-            
+            <p className='text-center'>888-728-6795</p>            
         </div>
         </motion.div>
       </div>
