@@ -39,7 +39,7 @@ const params = router.pathname
             <button onClick={() => {checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})}}>Services</button>
             <button onClick={() => {checkfordoc()[2]?.scrollIntoView({behavior:'smooth'})}}>About</button>
             <button onClick={() => {checkfordoc()[3]?.scrollIntoView({behavior:'smooth'})}}>Contact</button>
-            <button onClick={() => router.push('/allproperties')}>Properties</li>
+            <button onClick={() => router.push('/allproperties')}>Properties</button>
 
             </ul>
         </div> 
