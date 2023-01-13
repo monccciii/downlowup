@@ -66,7 +66,12 @@ export default function Allproperties() {
                 })}
         </div>
         </div>
-           
+        <div className='bg-white h-[10vh] w-[100vw]'>
+            <p className='mt-[3vh] text-center'>DownLowUP</p>
+            <p className='text-center'>888-728-6795</p>
+            <p className='text-center underline decoration-indigo-500' onClick={() => router.push('/panel')}>Panel</p>
+            
+        </div>
             </div>
   </>
   )
