@@ -26,19 +26,20 @@ const params = router.pathname
             router.push('/')
             checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
           }}}></Image>
+
                 <ul style={{fontFamily:"'Poppins', sans-serif"}} className='text-black gap-2  sm:gap-10 flex font-light'>
-                <li onClick={() => {
+                <button onClick={() => {
               if (!params) {
               checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
               } else {
                 router.push('/')
                 checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
               }}
-            }>Home</li>
-            <li onClick={() => {checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})}} className='cursor-pointer'>Services</li>
-            <li onClick={() => {checkfordoc()[2]?.scrollIntoView({behavior:'smooth'})}} className='cursor-pointer'>About</li>
-            <li onClick={() => {checkfordoc()[3]?.scrollIntoView({behavior:'smooth'})}} className='cursor-pointer'>Contact</li>
-            <li onClick={() => router.push('/allproperties')}>Properties</li>
+            }>Home</button>
+            <button onClick={() => {checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})}}>Services</button>
+            <button onClick={() => {checkfordoc()[2]?.scrollIntoView({behavior:'smooth'})}}>About</button>
+            <button onClick={() => {checkfordoc()[3]?.scrollIntoView({behavior:'smooth'})}}>Contact</button>
+            <button onClick={() => router.push('/allproperties')}>Properties</li>
 
             </ul>
         </div> 
