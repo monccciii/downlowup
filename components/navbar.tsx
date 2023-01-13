@@ -35,9 +35,9 @@ const params = router.pathname
                 checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
               }}
             }>Home</li>
-            <li onClick={() => {checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})}}>Services</li>
-            <li onClick={() => {checkfordoc()[2]?.scrollIntoView({behavior:'smooth'})}}>About</li>
-            <li onClick={() => {checkfordoc()[3]?.scrollIntoView({behavior:'smooth'})}}>Contact</li>
+            <li onClick={() => {checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})}} className='cursor-pointer'>Services</li>
+            <li onClick={() => {checkfordoc()[2]?.scrollIntoView({behavior:'smooth'})}} className='cursor-pointer'>About</li>
+            <li onClick={() => {checkfordoc()[3]?.scrollIntoView({behavior:'smooth'})}} className='cursor-pointer'>Contact</li>
             <li onClick={() => router.push('/allproperties')}>Properties</li>
 
             </ul>
