@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import Navbar from '../components/navbar'
 import { initFirebase, userAccessToken } from '../firebase/firebaseApp';
 import { getDatabase, ref, onValue } from "firebase/database";
-
+import { motion } from 'framer-motion';
 
 export default function Allproperties() {
     const db = getDatabase();
@@ -41,24 +41,29 @@ export default function Allproperties() {
     </Head>
     <Navbar />
     <div style={{fontFamily:"'Poppins', sans-serif"}}>
-        <h1 className='text-center text-3xl mb-5 underline '>All Properties</h1>
+        <h1 className='text-center text-5xl mb-5 font-extralight tracking-widest mb-[10vh]'>ALL PROPERTIES</h1>
         <div className='flex'>
             <div className='mx-auto'>
-            <div className='grid gap-4 px-10  grid-cols-1 sm:grid-cols-6'>
         
         {properties === undefined ? '' : properties.map((property, index) => {
                   return (
-                    <div key={index} className='p-2 text-transparent bg-slate-400 text-black rounded transition ease-in-out delay-150 hover:text-black translate-y-1 z-50 hover:scale-110 hover:bg-slate-100 duration-300'>
+                    <motion.div
+  initial={{ opacity: 0}}
+  whileInView={{ opacity: 1}}
+  transition={{ duration: 0.5, type: "tween" }}
+  viewport={{ once: true }} key={index} >
+       
+
+                    <div className='p-2 z-10 text-transparent bg- text-white rounded transition ease-in-out delay-150 translate-y-1 z-50 hover:scale-110 hover:bg-black duration-300 mb-[5vh]'>
                         <p className='font-extralight'>
-                      <Image src={property.image} alt='' width={200} height={100}></Image>
+                      <Image src={property.image} alt='' width={700} height={500}></Image>
                       <p className='text-center'>{property.address}</p>
                       <p className='text-center'>${property.price}</p>
                     </p> 
                     </div>
+                    </motion.div>
                   )
                 })}
-        </div>
-
         </div>
         </div>
            

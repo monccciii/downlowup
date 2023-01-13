@@ -26,7 +26,7 @@ const params = router.pathname
             router.push('/')
             checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
           }}}></Image>
-                <ul style={{fontFamily:"'Poppins', sans-serif", fontWeight:'400'}} className='text-black gap-1 sm:gap-10 flex'>
+                <ul style={{fontFamily:"'Poppins', sans-serif"}} className='text-black gap-2  sm:gap-10 flex font-light'>
                 <li onClick={() => {
               if (!params) {
               checkfordoc()[1]?.scrollIntoView({behavior:'smooth'})
