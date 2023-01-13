@@ -71,7 +71,6 @@ export default function Login() {
                       const errorMessage = error.message;
                     });
                   }}>Login</button>
-                  <button style={{fontWeight:'600'}} className='text-base bg-indigo-500 rounded text-white p-2'>Reset Password</button>
                   </div>
                 </div>
     

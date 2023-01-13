@@ -275,7 +275,7 @@ No more of the hassle of making phone calls all day, <span style={{fontWeight:'4
                 (isSent === true) ? <p className='fixed bottom-0 w-full bg-green-500 p-5 rounded-lg text-center text-white'>Successfully sent! Please wait for a reply.</p> : <p className='fixed bottom-0 w-full bg-red-500 p-5 rounded-lg text-center text-white'>Unsuccessfully sent. Please try again.</p>}
 
         </div>
-        <div className='bg-white h-[10vh] w-[100vw]'>
+        <div className='bg-white h-[10vh] w-[100vw] shadow-2xl'>
             <p className='mt-[3vh] text-center'>DownLowUP</p>
             <p className='text-center'>888-728-6795</p>
             <p className='text-center underline decoration-indigo-500' onClick={() => router.push('/panel')}>Panel</p>
