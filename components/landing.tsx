@@ -58,7 +58,7 @@ export default function Landing() {
 
   return (
     <div className='scrollbar-hide'>
-      <div className='w-full overflow-x-hidden ' style={{fontFamily:"'Poppins', sans-serif", fontWeight:'200'}}>
+      <div className='w-full overflow-x-hidden ' id='top' style={{fontFamily:"'Poppins', sans-serif", fontWeight:'200'}}>
       
 
         <div id='main' className='grid grid-cols-1 lg:grid-cols-3'>
@@ -66,7 +66,7 @@ export default function Landing() {
         <div>
           
         </div>
-        <div className='p-20' id='top'>
+        <div className='p-20' >
         <Image src="/prelayered.png" width={1000} height={720} alt=''></Image>
         </div>
         </div>
