@@ -80,7 +80,7 @@ export default function Landing() {
 
 
         <div className='w-[70vw] mt-[15vh] m-auto break-words'>
-        <p className='text-2xl sm:text-3xl text-center'>Imagine a place where you can just make one call and find the rental property of your dreams. <br /> Well, <span style={{fontWeight:'400'}}>DownLowUp</span> is that place!</p>
+        <p className='text-2xl sm:text-3xl text-center'>Imagine a place where you can just make one call and find the rental property of your dreams. <br /> Well, <span style={{fontWeight:'400'}}>DownLowUP</span> is that place!</p>
         </div>
         <div className=' mt-[10vh] w-full'>
         <ul className='text-white z-10 list-none justify-evenly flex'>
@@ -89,7 +89,7 @@ export default function Landing() {
   whileInView={{ opacity: 1}}
   transition={{ duration: 1, type: "tween" }}
   viewport={{ once: true }}>
-                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>Step 1</li>
+                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 tracking-widest'>EXPLORE PROPERTIES.</li>
                 </motion.div>
                 <li className='p-3 rounded'>Step 2</li>
                 <motion.div
@@ -97,7 +97,7 @@ export default function Landing() {
   whileInView={{ opacity: 1}}
   transition={{ duration: 5, type: "tween" }}
   viewport={{ once: true }}>
-                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>Step 3</li>
+                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 tracking-widest'>SCHEDULE A WALKTHROUGH</li>
                 </motion.div>
                 <li className='p-3 rounded'>Step 4</li>
             </ul>
@@ -114,14 +114,14 @@ export default function Landing() {
         </motion.div>
 
             </div>
-            <ul className='text-white mb-[25vh] z-10 list-none justify-evenly flex'>
+            <ul className='text-white mb-[50vh] z-10 list-none justify-evenly flex'>
                 <li className='p-3 rounded'>Step 1<br/></li>
                 <motion.div
   initial={{ opacity: 0}}
   whileInView={{ opacity: 1}}
   transition={{ duration: 4, type: "tween" }}
   viewport={{ once: true }}>
-                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>Step 2</li>
+                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 tracking-widest'>FIND THE PROPERTY YOU LOVE.</li>
                 </motion.div>
                 <li className='p-3 rounded'>Step 3</li>
                 <motion.div
@@ -129,7 +129,7 @@ export default function Landing() {
   whileInView={{ opacity: 1}}
   transition={{ duration: 6, type: "tween" }}
   viewport={{ once: true }}>
-                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300'>Step 4</li>
+                <li className='p-3 rounded bg-black transition ease-in-out delay-150 bg-black hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 tracking-widest'>GET INTO YOUR NEW HOME!</li>
                 </motion.div>
             </ul>
 
@@ -146,7 +146,7 @@ export default function Landing() {
 
 
 
-        <div className='w-[100vw] bg-white'>
+        <div className='w-[100vw]  bg-white'>
         <motion.div
   initial={{ opacity: 0, marginTop:0}}
   whileInView={{ opacity: 1, marginTop:'20vh', textShadow:'-2px 1px'}}
@@ -158,52 +158,13 @@ export default function Landing() {
                 
                 
                 
-                <div className='mt-[30vh] flex'>
-                <div className="max-w-sm mx-auto rounded transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-slate-100 duration-300 overflow-hidden shadow-lg">
-  <div className="px-6 py-4">
-  <div style={{fontWeight:600}} className="text-xl text-center mb-2">Fact 1</div>
-  <p className='text-center'>image w-full</p>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
-  <div className="px-6 pt-4 pb-2">
-   
-  </div>
-</div>
-<div className="max-w-sm mx-auto rounded transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-slate-100 duration-300 overflow-hidden shadow-lg">
-  <div className="px-6 py-4">
-  <div style={{fontWeight:600}} className="text-xl text-center mb-2">Fact 2</div>
-  <p className='text-center'>image w-full</p>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
-  <div className="px-6 pt-4 pb-2">
-   
-  </div>
-</div>
-<div className="max-w-sm mx-auto rounded transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-slate-100 duration-300 overflow-hidden shadow-lg">
-  <div className="px-6 py-4">
-    <div style={{fontWeight:600}} className="text-xl text-center mb-2">Fact 3</div>
-    <p className='text-center'>image w-full</p>
-    <p className="text-gray-700 text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-    </p>
-  </div>
-  <div className="px-6 pt-4 pb-2">
-   
-  </div>
-</div>
-</div>
-
             </div>
         </div>
 
 
 
 
-        <div className='mt-[20vh] w-[100vw] h-[110vh] bg-black'>
+        <div className='mt-[50vh] w-[100vw] h-[110vh] bg-black'>
             <div className='h-[2vh]'></div>
         <motion.div
   initial={{ opacity: 0, marginTop:0}}
