@@ -66,7 +66,7 @@ export default function Landing() {
         <div>
           
         </div>
-        <div className='p-20'>
+        <div className='p-20' id='top'>
         <Image src="/prelayered.png" width={1000} height={720} alt=''></Image>
         </div>
         </div>
